@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 
 //    class Solution {
 //        public List solution(int[] num_list) {
@@ -29,8 +29,8 @@ import java.util.List;
                 answer[i] = num_list[i];
             }
 
-            int last = num_list[num_list.length-1];
-            int before = num_list[num_list.length-2];
+            int last = num_list[num_list.length-1]; // 마지막 원소
+            int before = num_list[num_list.length-2]; // 마지막 전 원소
 
             answer[answer.length-1] = last > before ? last - before : last*2;
 
