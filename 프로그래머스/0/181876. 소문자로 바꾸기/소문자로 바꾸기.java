@@ -1,9 +1,11 @@
 class Solution {
     public String solution(String myString) {
-          String answer = "";
+//           String answer = "";
 
-            answer = myString.toLowerCase();
+//             answer = myString.toLowerCase();
 
-            return answer;
+//             return answer;
+        
+         return myString.toLowerCase();
     }
 }
