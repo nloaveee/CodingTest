@@ -1,4 +1,4 @@
- class Solution {
+class Solution {
         public String solution(String rny_string) {
 
             // 1
