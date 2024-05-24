@@ -1,4 +1,25 @@
 class Solution {
+       boolean solution(String s){
+           String answer = s.toLowerCase();
+           int count = 0;
+           
+           for(int i = 0; i<answer.length(); i++){
+               if (answer.charAt(i)=='p'){
+                   count++;
+               } else if (answer.charAt(i) == 'y'){
+                   count--;
+               }
+           }
+           
+           if (count == 0){
+               return true;
+           } 
+           return false;
+       }
+   }
+   
+   
+    /*class Solution {
         boolean solution(String s) {
 
             String answer = s.toLowerCase();
@@ -19,3 +40,4 @@ class Solution {
             return false;
         }
     }
+     */
