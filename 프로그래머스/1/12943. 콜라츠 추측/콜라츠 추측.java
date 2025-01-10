@@ -4,19 +4,16 @@ class Solution {
 
         while (num!=1) {
 
-            if (answer >= 500) {
+            if (answer == 500) {
                 answer = -1;
                 break;
             }
 
-            if (num % 2 == 0) {
+            if (num % 2 == 0) 
                 num = num / 2;
-                answer++;
-            } else if ( num % 2 != 0) {
+            else if ( num % 2 != 0) 
                 num = (num*3) + 1;
-                answer++;
-            }
-
+             answer++;
         }
 
         return answer;
