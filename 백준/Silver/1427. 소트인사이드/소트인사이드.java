@@ -1,22 +1,23 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 
-		String str = sc.next();
-		String[] num = str.split("");
-		int arr[] = new int[num.length];
+    public static void main(String[] args) {
 
-		for (int i = 0; i < num.length; i++) {
-			arr[i] = Integer.parseInt(num[i]);
-		}
+    Scanner scanner = new Scanner(System.in);
 
-		Arrays.sort(arr);
+    String str = scanner.next();
+    String[] num = str.split("");
+    int[] numArr = new int[num.length];
 
-		for (int i = arr.length - 1; i >= 0; i--) {
-			System.out.print(arr[i]);
-		}
-	}
+    for (int i = 0; i < num.length; i++) {
+        numArr[i] = Integer.parseInt(num[i]);
+    }
+
+    Arrays.sort(numArr);
+
+    for (int i = numArr.length - 1; i>=0; i--) {
+        System.out.print(numArr[i]);
+    }
+    }
 }
